@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+.card-containar {
+    width:80%;
+    display:grid;
+    margin:50px auto;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    gap:20px;
+
+}
+
+.card-containar .single-card .bx{
+font-size:55px ;
+
+}
+
+.card-containar .single-card h2 {
+  margin:10px 0;  
+}
+
+.card-containar .single-card button{
+    background-color: black;
+    color:white;
+    padding:12px 20px;
+    border:0;
+    border-radius:25px;
+    cursor:pointer;
+    margin-top:15px;
+
+}
+.card-containar .single-card{
+    border:2px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    text-align:center;
+    border-radius:5px;
+    padding: 60px 20px;
+    transition:0.5s all linear;
+}
+.card-containar .single-card:hover{
+    background:hotpink;
+}
+.card-containar .single-card:hover .bx{
+    color:white;
+}
+.card-containar .single-card:hover p {
+    color:white;
+}
+.card-containar .single-card:hover h2{
+    color:white;
+}
+.card-containar .single-card:hover button{
+    color: hotpink;
+    background-color: white;
+}
+@media (max-width:575px) {
+    .card-containar{
+      width:100%  ;
+      padding:0 20px;
+    }
+}
